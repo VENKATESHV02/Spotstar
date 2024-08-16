@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORGOT OTP VERIFICATION</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: rgb(3, 1, 13);
+        }
+
+        .otp-container {
+            display: flex;
+            gap: 10px;
+        }
+
+        .otp-input {
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            font-size: 18px;
+            border: 1px solid #f5f5f5;
+            border-radius: 5px;
+            outline: none;
+            box-shadow: 0 0 5px rgb(255, 255, 255);
+        }
+
+        .otp-input:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+        h1{
+            color: rgb(239, 227, 227);
+        }
+        h2{
+            color: rgb(239, 227, 227);
+        }
+        button{
+            color: rgb(16, 6, 44);
+            font-size: large;
+            border-radius: 3px;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-top: 20px;
+        }
+        p{
+            color: rgba(242, 242, 242, 0.463);
+            font-size: large;
+        }
+        input{
+            border-radius: 10px;
+            font-size: large;
+        }
+        img{
+            padding-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <img src="../spotstar.png" height="100px" width="250px" alt="Icon">
+    <br>   
+    <fieldset style="background-color: rgba(121, 140, 200, 0.578);height: 400px;; width: 100%;border-radius: 10px;">
+    <br>
+    <h1>FORGOT PASSWORD </h1>
+    <h2>OTP VERIFICATION</h2>
+    <br>
+    <input type="text" class="otp-input" maxlength="1" oninput="moveToNext(this, event)">
+    <input type="text" class="otp-input" maxlength="1" oninput="moveToNext(this, event)">
+    <input type="text" class="otp-input" maxlength="1" oninput="moveToNext(this, event)">
+    <input type="text" class="otp-input" maxlength="1" oninput="moveToNext(this, event)">
+    <br>
+    <br>
+    <a href="./fsetnewpass.html"><button>Verify</button></a>
+    <br>
+    <br>
+    <button>Resend OTP</button></a>
+    </fieldset>
+    </center>
+</body>
+</html>
